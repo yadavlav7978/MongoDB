@@ -72,7 +72,10 @@ const createDocument = async () => {
       Roll_no: 15,
       active: true,
     });
-
+    
+  // Below line inserts the four student documents into the "Students" collection using the insertMany() method. 
+ //The insertMany() method takes an array of documents as an argument and inserts them into the collection.
+    
     const result = await Students.insertMany([Student1,Student2,Student3,Student4,]);
     console.log(result);
 
