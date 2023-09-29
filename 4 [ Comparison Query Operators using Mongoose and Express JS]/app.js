@@ -51,7 +51,7 @@ findDocument1();
 
 const findDocument2 = async () => {
   try {
-    const result = await Students.find({ name : ['Akash' ,'Lav Yadav'] });
+     const result = await Students.find({ name: { $in:["Akash", "Lav Yadav"] }});
     console.log(result);
   } catch (err) {
     console.log(err);
